@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+body{
+  background-color: #F8F9FB;
+}
+
+.active , .active span{
+  display: inline-block;
+  background-color: #EFF6FF;
+  color: #155DFC !important;
+}
+
+
+/* index.css yoki global CSS faylga qo'shing */
+
+/* index.css */
+/* index.css */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;       /* scroll bar eni */
+  height: 8px;      /* horizontal scroll bo'lsa */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;                  /* thin yoki auto */
+  scrollbar-color: white;      /* thumb va track rangi */
+}
+
+/* Barcha elementlar uchun scroll ishlashda hali ham scroll mavjud bo'ladi */
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb; /* blue-600 */
+  animation: bounce 0.7s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    background: #2563eb; /* blue-600 */
+  }
+  30% {
+    transform: translateY(-6px);
+    background: #3b82f6; /* blue-500 */
+  }
+  60% {
+    transform: translateY(0);
+    background: #2563eb; /* blue-600 */
+  }
+  100% {
+    transform: translateY(0);
+    background: #2563eb;
+  }
+}
